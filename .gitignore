@@ -1,0 +1,9 @@
+# Ignore the .env file so developers don't clobber eachother's settings.
+.env
+
+# Ignore node modules and NPM logs
+/node_modules
+npm-debug.log
+
+# Ignore the precompiled source (/lib)
+/lib

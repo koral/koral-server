@@ -1,0 +1,32 @@
+{
+  "name": "koral-server",
+  "version": "0.0.1",
+  "description": "The server for Koral",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koral/koral-server.git"
+  },
+  "author": "Gabriele Cirulli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/koral/koral-server/issues"
+  },
+  "homepage": "https://github.com/koral/koral-server#readme",
+  "dependencies": {
+    "babel": "^5.8.21",
+    "dotenv": "^1.2.0",
+    "invariant": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.0.5",
+    "eslint": "^1.1.0",
+    "gulp": "^3.9.0",
+    "gulp-nodemon": "^2.0.3",
+    "kexec": "^1.2.0",
+    "nodemon": "^1.4.0"
+  }
+}
