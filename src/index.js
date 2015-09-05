@@ -1,13 +1,6 @@
-import net from "net";
+// Using ES2015 imports in this file is impossible, because imports bubble to
+// the top and thus the `dotenv.load()` call gets moved down, which makes
+// `process.env` unavailable at the top level of some of the imported files.
 
-const PORT = process.env.PORT;
-
-var server = net.createServer((c) => {
-  console.log("Connection from client");
-
-  c.on("end", () => console.log("client disconnected"));
-});
-
-server.listen(PORT, () => {
-  console.log(`Listening on ${PORT}`);
-});
+require("dotenv").load();
+require("./init")();
